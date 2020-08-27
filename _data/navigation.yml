@@ -1,9 +1,26 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Blog"
+    url: /blog/
+  - title: "Docs"
+    url: /docs/
   - title: "About"
     url: /about/
+    
+docs:
+    - title: Getting Started
+      children:
+        - title: "Quick Start Guide"
+          url: /docs/quick-start/
+        - title: "Choosing a Solenoid"
+          url: /docs/solenoid-choice/
+    
+    - title: Hardware
+      children:
+        - title: "Schematics"
+          url: /docs/schematics/
+        - title: "Board Layout"
+          url: /docs/board/
+        - title: "Assembly"
+          url: /docs/assembly/
+        - title: "Components"
+          url: /docs/components/
