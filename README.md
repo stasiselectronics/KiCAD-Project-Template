@@ -1,20 +1,8 @@
-# Minimal Mistakes remote theme starter
+# Open Source Hardware Pages Template
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+I wanted to create a pages template for my open source hardware projects to help with documentation, sharing, and posting about it's development.
 
-Contains basic configuration to get you a site with:
-
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
-
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+This template uses the Minimal Mistakes Jekyll theme, and is intended to be used with github pages. Though, there's nothing stopping you from hosting it on your own domain.
 
 ---
 
