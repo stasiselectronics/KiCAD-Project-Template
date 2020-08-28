@@ -18,6 +18,7 @@ feature_row:
     caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
     alt: "placeholder image 1"
     title: "Placeholder 1"
+    url: "test.com"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
