@@ -16,7 +16,7 @@ Google's `<model-viewer>` is used to embedd the 3D models. you can find out more
 ```html
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-<model-viewer style="width: 100%;height: 500px;" src="\docs\board\assets\ESP32MiniDrop_PCBA.gltf" auto-rotate exposure="1.0" skybox-image="\docs\board\assets\background.png" camera-controls></model-viewer>
+<model-viewer style="width: 100%;height: 500px;" src="/docs/board/assets/ESP32MiniDrop_PCBA.gltf" auto-rotate exposure="1.0" skybox-image="/docs/board/assets/background.png" camera-controls></model-viewer>
 ```
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -25,10 +25,10 @@ Google's `<model-viewer>` is used to embedd the 3D models. you can find out more
 <model-viewer 
 style="width: 100%;
 height: 500px;"
-src="\docs\board\assets\ESP32MiniDrop_PCBA.gltf" 
+src="/docs/board/assets/ESP32MiniDrop_PCBA.gltf" 
 auto-rotate 
 exposure="1.0"
-skybox-image="\docs\board\assets\background.png" 
+skybox-image="/docs/board/assets/background.png" 
 camera-controls>
 </model-viewer>
 
