@@ -73,10 +73,10 @@ I use denatured ethenol to clean my boards. Another popular options is to use Is
 Cleaning with an alcohol based solution will create a fire hazard. Be sure to follow the below safety measures and do so at your own risk.
 
 {: .notice--danger}
- - Be sure there are no sources of flame or spark nearby.<br>
- - Discharge any static charge you may carry.<br>
- - Work in an a well ventilated area.<br>
- - Wear gloves and splash goggles<br>
+ Be sure there are no sources of flame or spark nearby.<br>
+ Discharge any static charge you may carry.<br>
+ Work in an a well ventilated area.<br>
+ Wear gloves and splash goggles<br>
 
 If you have an ultrasonic cleaner, check with the manufacturer's recomendations or your preferred methods.
 
