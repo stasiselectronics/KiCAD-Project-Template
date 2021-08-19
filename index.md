@@ -8,7 +8,7 @@ footer: true
 # Project Description
 What's this whole thing about anyways?
 
-Be sure to check out the [docs!]()
+Be sure to check out the [docs!]({{site.baseurl}}/docs/)
 
 
 
