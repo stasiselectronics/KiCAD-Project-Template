@@ -1,11 +1,11 @@
 main:
   - title: "Docs"
     url: /docs/
-  - title: "Blog"
-    url: /blog/
+  - title: "Gallery"
+    url: /gallery/
   - title: "About"
     url: /about/
-    
+  
 docs:
     - title: Getting Started
       children:
