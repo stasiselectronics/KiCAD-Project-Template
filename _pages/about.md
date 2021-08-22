@@ -6,17 +6,12 @@ footer: false
 
 <h4>Welcome to the Documentation Webiste!</h4>
 
-<div>
-	{% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-    {% endif %}
-</div>
 
 This webiste is dedicated to hosting the documentation template for my designs here at Stasis Electronics.
 
 The website is being deployed on gh-pages 
 
-- View the [source files] on github
+- View the [source files]({{ site.github.repository_url }}) on github
 
 The theme for the website is based off of the wonderful Jekyll theme "Minimal Mistakes" by [Michael Rose](https://mmistakes.github.io/minimal-mistakes/about/)
 
