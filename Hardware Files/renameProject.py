@@ -85,9 +85,14 @@ for line in fileinput.input( fileToSearch ):
 tempFile.close()
 
 
+
 # Search through all the files and replace filenames
+list_of_directories = os.walk(dir_path)
+# I had to refresh this os.walk to reitterate over the directory
 for root, dirs, files in list_of_directories:
     for eachFile in files:
         (filename, extension) = os.path.splitext(eachFile)
-        if(filename.find('{ProjectName}')) != -1:
+        if(filename.find(oldProjectName)) != -1:
             print( "Renaming " + filename  + extension + " -> to -> " + newProjectName + extension)
+            os.rename(eachFile, dir_path + "\\" + newProjectName+extension)
+
