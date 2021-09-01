@@ -1,2 +1,2 @@
-# KiKadProjectTemplate
-Template for KiKad Hardware Projects
+# KiCAD Schematic Symbols Libraries
+Here are all the symbol libraries included in this project.
