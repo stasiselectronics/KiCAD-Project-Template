@@ -44,27 +44,44 @@ import glob
 from os import listdir
 from os.path import isfile, join
 
-oldProjectName = 'this should be automatically found'
+# project name variables
+currentProjectName = 'this should be automatically found'
 newProjectName = "testProjectName"
 
+# File path
 dir_path = os.path.dirname(os.path.realpath(__file__))
-list_of_directories = os.walk(dir_path)
 
-# Search through all the files and find out the name of the project.
-for root, dirs, files in list_of_directories:
-    for eachFile in files:
-        (filename, extension) = os.path.splitext(eachFile)
-        if(extension.find('.pro')) != -1:
-            oldProjectName = filename
-            # this will just find the last one if there is more than one. But there shouldn't be more than one
-            print(filename+extension)
+# find the current project name
+print("looking for existing project file...")
 
+for root, dirs, files in os.walk(".", topdown=False):
+    for name in files:
+        if(name.find('.pro') != -1):
+            (currentProjectName, extension) = os.path.splitext(name)
 
-print("I found " + oldProjectName + " as the old project name.")
+# Tell and ask for new name
+
+print("I found " + currentProjectName + " as the current project name.")
 
 print ("What's the new name?")
 newProjectName = input( "> " )
 
+# Renaming Files
+for root, dirs, files in os.walk(".", topdown=False):
+    for name in files:
+        if(name.find(currentProjectName) != -1):
+            (filename, extension) = os.path.splitext(name)
+            print( "Renaming " + filename  + extension + " -> to -> " + newProjectName + extension)
+            os.rename(root + "\\" + name , root + "\\" + newProjectName + extension )
+# Renaming Directories
+for root, dirs, files in os.walk(".", topdown=False):
+    for name in dirs:
+        if(name.find(currentProjectName) != -1):
+            print(name)
+            (filename, extension) = os.path.splitext(name)
+            print(extension)
+            print( "Renaming " + name + " -> to -> " + newProjectName + extension)
+            os.rename(os.path.join(root, name), os.path.join(root, newProjectName + extension))
 
 # Open footprint symbol file and change the name:
 print("fixing footprint library link...")
@@ -72,7 +89,7 @@ fileToSearch = "fp-lib-table"
 tempFile = open( dir_path + "\\"  + fileToSearch, 'r+' )
 
 for line in fileinput.input( fileToSearch ):
-    tempFile.write( line.replace( oldProjectName, newProjectName ) )
+    tempFile.write( line.replace( currentProjectName, newProjectName ) )
 tempFile.close()
 
 # Open schematic symbol file and change the name:
@@ -81,18 +98,6 @@ fileToSearch = "sym-lib-table"
 tempFile = open( dir_path + "\\"  + fileToSearch, 'r+' )
 
 for line in fileinput.input( fileToSearch ):
-    tempFile.write( line.replace( oldProjectName, newProjectName ) )
+    tempFile.write( line.replace( currentProjectName, newProjectName ) )
 tempFile.close()
-
-
-
-# Search through all the files and replace filenames
-list_of_directories = os.walk(dir_path)
-# I had to refresh this os.walk to reitterate over the directory
-for root, dirs, files in list_of_directories:
-    for eachFile in files:
-        (filename, extension) = os.path.splitext(eachFile)
-        if(filename.find(oldProjectName)) != -1:
-            print( "Renaming " + filename  + extension + " -> to -> " + newProjectName + extension)
-            os.rename(eachFile, dir_path + "\\" + newProjectName+extension)
 
