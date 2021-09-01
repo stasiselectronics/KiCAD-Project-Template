@@ -84,18 +84,22 @@ for root, dirs, files in os.walk(".", topdown=False):
 # Open footprint symbol file and change the name:
 print("fixing footprint library link...")
 fileToSearch = "fp-lib-table"
-tempFile = open( dir_path + "\\"  + fileToSearch, 'r+' )
-
-for line in fileinput.input( fileToSearch ):
-    tempFile.write( line.replace( currentProjectName, newProjectName ) )
-tempFile.close()
+myfile = open(fileToSearch, "rt")
+data = myfile.read()
+data = data.replace(currentProjectName, newProjectName)
+myfile.close()
+myfile = open(fileToSearch, "wt")
+myfile.write(data)
+myfile.close()
 
 # Open schematic symbol file and change the name:
 print("fixing symbol library link...")
 fileToSearch = "sym-lib-table"
-tempFile = open( dir_path + "\\"  + fileToSearch, 'r+' )
 
-for line in fileinput.input( fileToSearch ):
-    tempFile.write( line.replace( currentProjectName, newProjectName ) )
-tempFile.close()
-
+myfile = open(fileToSearch, "rt")
+data = myfile.read()
+data = data.replace(currentProjectName, newProjectName)
+myfile.close()
+myfile = open(fileToSearch, "wt")
+myfile.write(data)
+myfile.close()
