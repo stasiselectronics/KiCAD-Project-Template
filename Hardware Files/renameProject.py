@@ -77,9 +77,7 @@ for root, dirs, files in os.walk(".", topdown=False):
 for root, dirs, files in os.walk(".", topdown=False):
     for name in dirs:
         if(name.find(currentProjectName) != -1):
-            print(name)
             (filename, extension) = os.path.splitext(name)
-            print(extension)
             print( "Renaming " + name + " -> to -> " + newProjectName + extension)
             os.rename(os.path.join(root, name), os.path.join(root, newProjectName + extension))
 
