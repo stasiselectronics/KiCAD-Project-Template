@@ -79,7 +79,7 @@ The KiCAD project has a project specific library that can be used for keeping th
 
 Included in the project is a Jekyll static site written to provide more space to document the technical design. This way it keeps the discussion outside of the design files, but can be used to reference them and expand their information.
 
-The site exists as a separate branch to this repository, and must be titled "gh-pages"
+The site exists as a separate branch to this repository, and is titled "gh-pages"
 
 You can view the [template's github page]() to get a better understanding of where to get started.
 
