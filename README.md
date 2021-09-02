@@ -5,7 +5,7 @@ This branch of the repository contains all the source files for the documentatio
 
 ## Jekyll
 
-The site is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) is designed, developed, and maintained by [Michael Rose](https://mademistakes.com/about/) from Buffalo New York.
+The site is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) theme for jekyll. It is designed, developed, and maintained by [Michael Rose](https://mademistakes.com/about/) from Buffalo New York.
 
 ## Deploying the site for local development
 
