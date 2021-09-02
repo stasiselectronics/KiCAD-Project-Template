@@ -4,10 +4,10 @@ title: "About"
 footer: false
 ---
 
-<h4>Welcome to the Documentation Webiste!</h4>
+<h4>Welcome to the Documentation Website!</h4>
 
 
-This webiste is dedicated to hosting the documentation template for my designs here at Stasis Electronics.
+This website is dedicated to hosting the documentation template for my designs here at Stasis Electronics.
 
 The website is being deployed on gh-pages 
 
