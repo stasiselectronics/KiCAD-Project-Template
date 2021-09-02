@@ -27,7 +27,7 @@ https://ohwr.org/cern_ohl_s_v2.pdf
 
 This project structure was created using the Stasis Electronics KiCAD Template. It's what I use to help me focus on building circuit boards and writing firmware. 
 
-The goal is to reduce the workload needed to keep and maintain good documentation that maintains it's usefulness for years to come.
+The goal is to reduce the workload needed to keep and maintain good documentation that stays useful for years to come.
 
 I hope it helps you as well!
 
@@ -71,7 +71,7 @@ The site exists as a separate branch to this repository, and is titled "gh-pages
 
 You can view the [template's github page]() to get a better understanding of where to get started.
 
-The site is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) is designed, developed, and maintained by [Michael Rose](https://mademistakes.com/about/) from Buffalo New York.
+The site is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) theme for jekyll. It is designed, developed, and maintained by [Michael Rose](https://mademistakes.com/about/) from Buffalo New York.
 
 
 
