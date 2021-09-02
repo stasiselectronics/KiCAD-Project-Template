@@ -14,6 +14,15 @@ Here you can find all the files and folders needed to replicate or redesign this
 
 {DocumentationDescription}
 
+# Licenses
+
+The design files for this project are covered under 
+
+CERN-OHL-S
+Cern Open Hardware License - Strongly Reciprocal
+https://ohwr.org/cern_ohl_s_v2.pdf
+
+
 # Using this as a template
 
 This project structure was created using the Stasis Electronics KiCAD Template. It's what I use to help me focus on building circuit boards and writing firmware. 
