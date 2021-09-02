@@ -49,12 +49,14 @@ currentProjectName = 'this should be automatically found'
 newProjectName = "testProjectName"
 
 # File path
-dir_path = os.path.dirname(os.path.realpath(__file__))
-
+file_path = os.path.realpath(__file__)
+parent = os.path.dirname(file_path)
+parent = os.path.dirname(parent)
+print(parent)
 # find the current project name
 print("looking for existing project file...")
 
-for root, dirs, files in os.walk(".", topdown=False):
+for root, dirs, files in os.walk(parent, topdown=False):
     for name in files:
         if(name.find('.pro') != -1):
             (currentProjectName, extension) = os.path.splitext(name)
@@ -67,39 +69,37 @@ print ("What's the new name?")
 newProjectName = input( "> " )
 
 # Renaming Files
-for root, dirs, files in os.walk(".", topdown=False):
+for root, dirs, files in os.walk(parent, topdown=False):
     for name in files:
         if(name.find(currentProjectName) != -1):
             (filename, extension) = os.path.splitext(name)
             print( "Renaming " + filename  + extension + " -> to -> " + newProjectName + extension)
             os.rename(root + "\\" + name , root + "\\" + newProjectName + extension )
 # Renaming Directories
-for root, dirs, files in os.walk(".", topdown=False):
+for root, dirs, files in os.walk(parent, topdown=False):
     for name in dirs:
         if(name.find(currentProjectName) != -1):
             (filename, extension) = os.path.splitext(name)
             print( "Renaming " + name + " -> to -> " + newProjectName + extension)
             os.rename(os.path.join(root, name), os.path.join(root, newProjectName + extension))
 
-# Open footprint symbol file and change the name:
-print("fixing footprint library link...")
-fileToSearch = "fp-lib-table"
-myfile = open(fileToSearch, "rt")
-data = myfile.read()
-data = data.replace(currentProjectName, newProjectName)
-myfile.close()
-myfile = open(fileToSearch, "wt")
-myfile.write(data)
-myfile.close()
 
-# Open schematic symbol file and change the name:
-print("fixing symbol library link...")
-fileToSearch = "sym-lib-table"
+#scan for text
 
-myfile = open(fileToSearch, "rt")
-data = myfile.read()
-data = data.replace(currentProjectName, newProjectName)
-myfile.close()
-myfile = open(fileToSearch, "wt")
-myfile.write(data)
-myfile.close()
+for root, dirs, files in os.walk(parent, topdown=False):
+    print(dirs)
+    if(".git") in dirs:
+        dirs.remove(".git")
+    print(dirs)
+    for eachfile in files:
+        print(f"Dealing with file {root}/{eachfile}")
+        # This needs to ignore the git folder
+        myfile = open(eachfile, "rt")
+        data = myfile.read()
+        print(data.find(currentProjectName))
+        data = data.replace(currentProjectName, newProjectName)
+        myfile.close()
+        myfile = open(eachfile, "wt")
+        myfile.write(data)
+        myfile.close()
+
