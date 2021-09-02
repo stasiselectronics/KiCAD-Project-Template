@@ -33,7 +33,7 @@ I hope it helps you as well!
 
 ## Folder Structure
 
-The project is seperated into main categories at the root of the project folder. I use "Hardware Files" to hold all of the printed circuit board design files. I also use some other descriptive names and keep them consistent amongst projects:
+The project is separated into main categories at the root of the project folder. I use "Hardware Files" to hold all of the printed circuit board design files. I also use some other descriptive names and keep them consistent amongst projects:
 
 - **Enclosure Files** : 3D printed or somehow otherwise fabricated. All the files needed for the box the project might end up in.
 - **Firmware Files** : The code for any microcontrollers that might end up on the boards. 
@@ -67,12 +67,9 @@ The KiCAD project has a project specific library that can be used for keeping th
 
 Included in the project is a Jekyll static site written to provide more space to document the technical design. This way it keeps the discussion outside of the design files, but can be used to reference them and expand their information.
 
-The site exists as a separate branch to this repository, and must be titled "gh-pages"
+The site exists as a separate branch to this repository, and is titled "gh-pages"
 
 You can view the [template's github page]() to get a better understanding of where to get started.
-
-
-
 
 The site is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) is designed, developed, and maintained by [Michael Rose](https://mademistakes.com/about/) from Buffalo New York.
 
