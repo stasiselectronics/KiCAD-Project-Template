@@ -20,7 +20,7 @@ Before you begin soldering, make sure to gather your tools. It's no fun to have 
 
 | Required  |  |
 |:---:|:-|
-| **Soldering Iron** | If you have a soldering iron with a fine tip, that is preferred, however you can make do with a moderately sized tip. If it's too big you might find difficulty with soldeing the surface mount components. I keep mine at 410 deg C for ROHS solder.
+| **Soldering Iron** | If you have a soldering iron with a fine tip, that is preferred, however you can make do with a moderately sized tip. If it's too big you might find difficulty with soldering the surface mount components. I keep mine at 410 deg C for ROHS solder.
 | **Solder** | Make sure to have a solder that is thin enough. It should be less than 0.5 mm, with 0.3 mm being ideal. Too large and you'll find it too easy to add too much. Large solder is useful for the through hole components.
 | **Fine Tip Tweezers** | SMD parts are small, make sure you have something that can pick them up and move them around. A second pair can help make fine adjustments to SMD placements.
 | **Flux** | Rosin based flux will help make sure all your solder joints are strong and hassle free.
@@ -28,7 +28,7 @@ Before you begin soldering, make sure to gather your tools. It's no fun to have 
 | Optional  |  |
 |:---:|:-|
 | **Vice** | Something to hold down the PCB can be nice. There are a few different PCB vises out there, or try and DIY something that works.
-| **Magnification** | Ideally a stereo microscope or zoom camera, but a magnifying glass can be better than no magnifaction. Young eyes help too, but those can't be bought.
+| **Magnification** | Ideally a stereo microscope or zoom camera, but a magnifying glass can be better than no magnification . Young eyes help too, but those can't be bought.
 | **Hot Air Station** | This makes removing parts a snap if mistakes were made. It can also be used to position parts using the liquid solder's surface tension.
 | **Solder Paste** | Using a hot air station with solder paste can make assembly a breeze.
 | **Stencil** | A piece of metal with holes cut out for where the solder paste can be scraped over. Most PCB fabricators offer stencils for a relatively small fee.
@@ -78,7 +78,7 @@ Cleaning with an alcohol based solution will create a fire hazard. Be sure to fo
  Work in an a well ventilated area.<br>
  Wear gloves and splash goggles<br>
 
-If you have an ultrasonic cleaner, check with the manufacturer's recomendations or your preferred methods.
+If you have an ultrasonic cleaner, check with the manufacturer's recommendations or your preferred methods.
 
 
 ## Testing
@@ -95,5 +95,4 @@ Now that the board is fully mounted and cleaned, it's time test it out.
  - Check out the [Schematics]({{site.baseurl}}/docs/board/schematics/) to read more about how the design works.
  - See more [photos]({{site.baseurl}}/gallery/) from the development.
  - Fork the [source files](https://github.com/stasiselectronics/MicroBBPS) to modify the design.
- - Ready to build your own? Buy yours on [Tindie](https://www.tindie.com/products/stasis/micro-breadboard-power-supply/).
-
+ 
