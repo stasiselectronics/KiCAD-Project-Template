@@ -27,7 +27,7 @@ https://ohwr.org/cern_ohl_s_v2.pdf
 
 This project structure was created using the Stasis Electronics KiCAD Template. It's what I use to help me focus on building circuit boards and writing firmware. 
 
-The goal is to reduce the workload needed to keep and maintain good documentation that lasts, so we can keep it 
+The goal is to reduce the workload needed to keep and maintain good documentation that maintains it's usefulness for years to come.
 
 I hope it helps you as well!
 
@@ -35,9 +35,9 @@ I hope it helps you as well!
 
 The project is seperated into main categories at the root of the project folder. I use "Hardware Files" to hold all of the printed circuit board design files. I also use some other descriptive names and keep them consistent amongst projects:
 
-- ** Enclosure Files ** : 3D printed or somehow otherwise fabricated. All the files needed for the box the project might end up in.
-- ** Firmware Files ** : The code for any microcontrollers that might end up on the boards. 
-- ** Mechanical Files ** : Any CAD files for fabricating parts for the project. 
+- **Enclosure Files** : 3D printed or somehow otherwise fabricated. All the files needed for the box the project might end up in.
+- **Firmware Files** : The code for any microcontrollers that might end up on the boards. 
+- **Mechanical Files** : Any CAD files for fabricating parts for the project. 
 
 ## Use as a template
 
@@ -66,6 +66,13 @@ The KiCAD project has a project specific library that can be used for keeping th
 ## Use Github Pages to deploy a static documentation website
 
 Included in the project is a Jekyll static site written to provide more space to document the technical design. This way it keeps the discussion outside of the design files, but can be used to reference them and expand their information.
+
+The site exists as a separate branch to this repository, and must be titled "gh-pages"
+
+You can view the [template's github page]() to get a better understanding of where to get started.
+
+
+
 
 The site is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) is designed, developed, and maintained by [Michael Rose](https://mademistakes.com/about/) from Buffalo New York.
 
