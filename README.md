@@ -1,10 +1,18 @@
 # Open Source Hardware Pages Template
 
-I wanted to create a pages template for my open source hardware projects to help with documentation, sharing, and posting about it's development.
+This branch of the repository contains all the source files for the documentation website. The content is mostly written in markdown files that are then used by jekyll to generate the static website.
 
-This template uses the Minimal Mistakes Jekyll theme, and is intended to be used with github pages. Though, there's nothing stopping you from hosting it on your own domain.
 
----
+## Jekyll
+
+The site is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) is designed, developed, and maintained by [Michael Rose](https://mademistakes.com/about/) from Buffalo New York.
+
+## Deploying the site for local development
+
+If you would like to deploy the site locally to see changes quicker, you can use this guide from github:
+
+[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
+
 
 ## Troubleshooting
 
