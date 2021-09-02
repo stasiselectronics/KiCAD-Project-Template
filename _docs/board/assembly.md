@@ -69,7 +69,7 @@ Now that everything is mounted to the board, it deserves a good clean to wash of
 
 I use denatured ethenol to clean my boards. Another popular options is to use Isopropyl Alcohol. I have heard about using soap and water, but make sure to double check which options is best for you.
 
-**Open Baths of Flamable Gas and Liquid**
+**Open Baths of Flammable Gas and Liquid**
 Cleaning with an alcohol based solution will create a fire hazard. Be sure to follow the below safety measures and do so at your own risk.
 
 {: .notice--danger}
