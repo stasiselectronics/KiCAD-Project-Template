@@ -1,2 +1,2 @@
-# KiKadProjectTemplate
-Template for KiKad Hardware Projects
+# Output Files
+Description
