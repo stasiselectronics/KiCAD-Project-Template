@@ -63,15 +63,15 @@ It will go and search through the directories and replace the string of the proj
 
 The KiCAD project has a project specific library that can be used for keeping the custom designed footprints and symbols.
 
+By default it isn't a global library, so if you would like to use the footprints or symbols in another project be sure to change it to a "global" library.
+
+
 ## Use Github Pages to deploy a static documentation website
 
 Included in the project is a Jekyll static site written to provide more space to document the technical design. This way it keeps the discussion outside of the design files, but can be used to reference them and expand their information.
 
 The site exists as a separate branch to this repository, and is titled "gh-pages"
 
-You can view the [template's github page]() to get a better understanding of where to get started.
+You can view the [template's github page](https://stasiselectronics.github.io/KiCAD-Project-Template/) to get a better understanding of where to get started.
 
 The site is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/about/) theme for jekyll. It is designed, developed, and maintained by [Michael Rose](https://mademistakes.com/about/) from Buffalo New York.
-
-
-
