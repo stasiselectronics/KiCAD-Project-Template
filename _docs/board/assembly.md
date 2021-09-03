@@ -7,11 +7,10 @@ sidebar:
   nav: "docs"
 ---
 
-<figure style="max-width: 400px;" class="align-center">
-	<img src="{{site.baseurl}}/docs/board/assembly_assets/loose_components.jpg"/>
-</figure>
 
-If you are building your own right from the gerbers, or if you need to replace any of the components, I have tried my best to make sure there are plentiful replacements & alternatives available on the open parts market. Check the [Bill of Materials]({{site.baseurl}}/docs/board/components) for more information on what components were originally selected.
+If you are building your own right from the gerbers, or if you need to replace any of the components, I have tried my best to make sure there are plentiful replacements & alternatives available on the open parts market.
+
+Check the [Bill of Materials]({{site.baseurl}}/docs/board/components) for more information on what components were originally selected.
 
 This board has a combination of both through hole and surface mount components.
 
@@ -29,7 +28,7 @@ Before you begin soldering, make sure to gather your tools. It's no fun to have 
 |:---:|:-|
 | **Vice** | Something to hold down the PCB can be nice. There are a few different PCB vises out there, or try and DIY something that works.
 | **Magnification** | Ideally a stereo microscope or zoom camera, but a magnifying glass can be better than no magnification . Young eyes help too, but those can't be bought.
-| **Hot Air Station** | This makes removing parts a snap if mistakes were made. It can also be used to position parts using the liquid solder's surface tension.
+| **Hot Air Station** | This makes removing parts a snap if mistakes were made. It can also be used to correctly position parts using the liquid solder's surface tension.
 | **Solder Paste** | Using a hot air station with solder paste can make assembly a breeze.
 | **Stencil** | A piece of metal with holes cut out for where the solder paste can be scraped over. Most PCB fabricators offer stencils for a relatively small fee.
 
@@ -39,10 +38,6 @@ Using a stencil? [Jump to Instructions]({{site.baseurl}}/docs/board/stencil/)
 ## Getting Started
 
 Now that you've got all the parts and tools, we can start hand soldering the SMD components.
-
-<figure style="max-width: 400px;" class="align-center">
-  <img src="{{site.baseurl}}/docs/board/assembly_assets/base_board_1.jpg"/>
-</figure>
 
 The general approach to soldering is to follow this method:
 
@@ -61,9 +56,6 @@ Use a hot air station to help remove mistakes and try again if it's not working 
 ## Cleaning
 **Double check all the solder joints and touch up any that need some attention.** You should clean the board as the last step, so now's the chance to fix mistakes. (Or you might have to clean the board twice, the horror!)
 
-<figure >
-	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/cleaning_1.jpg"/>
-</figure>
 
 Now that everything is mounted to the board, it deserves a good clean to wash off the flux residue and any other gunk. A tooth brush can make a decent tool to use, and its neck can be bent with some heat from a hot air station.
 
@@ -78,19 +70,14 @@ Cleaning with an alcohol based solution will create a fire hazard. Be sure to fo
  Work in an a well ventilated area.<br>
  Wear gloves and splash goggles<br>
 
-If you have an ultrasonic cleaner, check with the manufacturer's recommendations or your preferred methods.
-
+If you have an ultrasonic cleaner, check with the manufacturer's recommendations or use your preferred methods.
 
 ## Testing
-<figure >
-	<img style="display: block;margin-left: auto;margin-right: auto;" src="{{site.baseurl}}/docs/board/assembly_assets/assembly_3.jpg"/>
-</figure>
 
 Now that the board is fully mounted and cleaned, it's time test it out.
 
 
 ## Finishing Up
-
 
  - Check out the [Schematics]({{site.baseurl}}/docs/board/schematics/) to read more about how the design works.
  - See more [photos]({{site.baseurl}}/gallery/) from the development.
