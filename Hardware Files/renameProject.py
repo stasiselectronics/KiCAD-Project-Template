@@ -38,17 +38,13 @@ Both of these will need to get changed.
  """
 
 import os
-import sys
-import fileinput
-import glob
-from os import listdir
-from os.path import isfile, join
+
 
 # project name variables
-currentProjectName = 'this should be automatically found'
-newProjectName = "testProjectName"
+currentProjectName = "this should be found automatically"
+newProjectName = "this should be given by user input"
 
-# File path
+# # File path
 file_path = os.path.realpath(__file__)
 parent = os.path.dirname(file_path)
 parent = os.path.dirname(parent)
@@ -84,22 +80,26 @@ for root, dirs, files in os.walk(parent, topdown=False):
             os.rename(os.path.join(root, name), os.path.join(root, newProjectName + extension))
 
 
-#scan for text
 
-for root, dirs, files in os.walk(parent, topdown=False):
-    print(dirs)
-    if(".git") in dirs:
-        dirs.remove(".git")
-    print(dirs)
+# Search through all the files and replace the project name string
+# This should skip the ".git" directory that lives in the root of the project, and any other hidden files and directories
+
+for root, dirs, files in os.walk(parent):
+    # filter out directories and then files that start with "." (which indicates a hidden file or directory in Unix)
+    dirs[:] = [d for d in dirs if not d.startswith('.')]
+    files[:] = [f for f in files if not f.startswith('.')]
     for eachfile in files:
-        print(f"Dealing with file {root}/{eachfile}")
-        # This needs to ignore the git folder
-        myfile = open(eachfile, "rt")
-        data = myfile.read()
-        print(data.find(currentProjectName))
-        data = data.replace(currentProjectName, newProjectName)
-        myfile.close()
-        myfile = open(eachfile, "wt")
-        myfile.write(data)
-        myfile.close()
+        try:
+            tempfile = open(os.path.join(root, eachfile))
+            data = tempfile.read()
+            tempfile.close()
+            if(data.find(currentProjectName)!=-1 and eachfile.find("renameProject.py") == -1):
+                print("Changing Project name in" + os.path.join(root, eachfile))
+                data = data.replace(currentProjectName, newProjectName)
+                tempfile = open(os.path.join(root, eachfile), "wt")
+                tempfile.write(data)
+                tempfile.close()
+        except:
+            print("failed to open file:")
+            print(os.path.join(root, eachfile))
 
