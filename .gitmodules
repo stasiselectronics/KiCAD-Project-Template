@@ -1,0 +1,3 @@
+[submodule "Hardware Files/Libraries/ Stasis Library Submodule"]
+	path = Hardware Files/Libraries/ Stasis Library Submodule
+	url = git@github.com:stasiselectronics/stasis-kicad-library.git
