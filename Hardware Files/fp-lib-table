@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name {ProjectName})(type KiCad)(uri ${KIPRJMOD}/Libraries/Footprints/{ProjectName}.pretty)(options "")(descr ""))
+  (lib (name .[--Stasis.Footprints.Library)(type KiCad)(uri "${KIPRJMOD}/Libraries/ Stasis Library Submodule/Footprints/.[--Stasis.Footprints.Library.pretty")(options "")(descr ""))
 )

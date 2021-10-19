@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name {ProjectName})(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/{ProjectName}.lib)(options "")(descr ""))
+  (lib (name .[--Stasis.Symbol.Library)(type Legacy)(uri "${KIPRJMOD}/Libraries/ Stasis Library Submodule/Symbols/.[--Stasis.Symbol.Library.lib")(options "")(descr ""))
 )
