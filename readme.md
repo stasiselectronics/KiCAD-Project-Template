@@ -19,9 +19,10 @@ Here you can find all the files and folders needed to replicate or redesign this
 The design files for this project are covered under 
 
 CERN-OHL-S
-Cern Open Hardware License - Strongly Reciprocal
-https://ohwr.org/cern_ohl_s_v2.pdf
 
+Cern Open Hardware License - Strongly Reciprocal
+
+[View Full License Text](https://ohwr.org/cern_ohl_s_v2.pdf)
 
 # Using this as a template
 
@@ -41,9 +42,13 @@ The project is separated into main categories at the root of the project folder.
 
 ## Use as a template
 
-[Use as a template!](https://github.com/stasiselectronics/KiCAD-Project-Template/generate)
+[Generate New Repo using this Template](https://github.com/stasiselectronics/KiCAD-Project-Template/generate)
 
-I think that would work to create a template, I need to test this. [Create an issue](https://github.com/stasiselectronics/KiCAD-Project-Template/issues/new/choose) if it, or anything else doesn't work!
+If you are logged into Github, you should be able to use the above link to start a new repo using this as a template. 
+
+Otherwise, download the 
+
+Don't forget to use the name change script to help make it yours!
 
 ## Renaming the project
 
